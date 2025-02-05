@@ -1,19 +1,22 @@
+"use client"
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer"
+import Head from "next/head";
 
 const montserrat = Montserrat({
   variable: "--font-mont",
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Rohan's Portfolio",
-  description: "Modern Portfolio App",
-};
 
 export default function RootLayout({ children }) {
+  <Head>
+    <meta name="Profile" content="width=device-width, initial-scale=1" />
+    <title>Home profile</title>
+  </Head>
+
   return (
     <html lang="en">
       <body
@@ -23,9 +26,7 @@ export default function RootLayout({ children }) {
         <NavBar />
 
 
-
-        {children}
-
+          {children}
 
 
         <Footer />

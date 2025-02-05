@@ -6,7 +6,8 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import icons from '@/components/Icons';
 import HireMe from "@/components/HireMe";
-import LightBulb from "@/../public/images/svgs/miscellaneous_icons_1.svg"
+import TransitionEffect from "@/components/TransitionEffect";
+
 
 export default function Home() {
   return (
@@ -15,31 +16,33 @@ export default function Home() {
         <title>Home profile</title>
         <meta name="Profile" content="About me" />
       </Head>
+      <TransitionEffect />
 
       <main className="flex items-center text-dark w-full min-h-screen">
-        <Layout className="pt-1 m-0">
-          <div className="flex items-center justify-between w-full">
-            <div className="w-1/2">
+        <Layout className="pt-1 md:pt-16 sm:pt-8">
+          <div className="flex items-center w-full lg:flex-col">
+            <div className="flex items-center justify-center w-1/2 lg:w-full">
               <Image
                 className="w-96 h-auto"
-                objectFit="fill"
+                priority={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 src={myProfile}
                 alt="RohanGautam"
               />
             </div>
-            <div className="w-1/2 flex flex-col items-center self-center">
+            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
 
-              <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl !text-left"/>
+              <AnimatedText text="Turning Ideas Into Reality With Code." className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"/>
 
-              <p className="my-4 text-base font-medium">As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
-                Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+              <p className="my-4 text-base font-medium md:text-sm sm:text-xs">Hi, I'm Rohan, a beginner full-stack developer passionate about transforming ideas into innovative web applications. Explore my latest projects to see my expertise in Next.js and modern web development in action.
               </p>
-              <div className="flex items-center self-start mt-2">
+              <div className="flex items-start gap-4 mt-2 lg:self-center xs:flex-col">
+
               <Link href="/dummy.pdf" target={"_blank"}
-              className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid hover:border-dark border-transparent" download={true}> Resume {<icons.LinkArrow className={"w-6 ml-1"} />} </Link>
+              className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid dark:border-light hover:border-dark border-transparent md:p-2 md:px-4 md:text-base" download={true}> Resume {<icons.LinkArrow className={"w-6 ml-1 sm:w-3"} />} </Link>
 
               <Link href={"mailto:rohan.gautam650@gmail.com"} target={"_blank"}
-              className="flex underline items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid hover:border-dark border-transparent ml-2">Contact</Link>
+              className="flex underline items-center bg-dark text-light p-2.5 px-8 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid dark:border-light hover:border-dark border-transparent ml-2 md:p-2 md:px-4 md:text-base">Contact</Link>
               </div>
 
             </div>
@@ -48,7 +51,7 @@ export default function Home() {
 
         <HireMe/>
 
-        {/* <div className="absolute right-8 bottom-3 inline-block w-20">
+        {/* <div className="absolute right-8 bottom-3 inline-block w-20 md:hidden ">
           <Image src={LightBulb} alt="RohanGautam" className="w-full h-auto"/>
         </div> */}
 

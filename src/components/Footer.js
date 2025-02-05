@@ -1,19 +1,110 @@
-import React from 'react'
-import Layout from './Layout'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
+import Logo from './Logo';
 
 function Footer() {
   return (
-    <footer className='w-full border-t-2 border-solid border-dark font-medium text-lg'>
-        <Layout className='py-8 flex items-center justify-between'>
-            <span>{new Date().getFullYear()} © All Rights Reserved.</span>
-            <div className='flex items-center'>
-            Build with <span className='text-primary text-xl px-1'>❤️</span> by&nbsp; <Link href="/" className='underline underline-offset-2'>RohanGautam</Link>
+    <section className="relative overflow-hidden py-10 dark:bg-dark bg-purple-300 dark:border dark:border-x-transparent dark:border-b-transparent">
+      <div className="relative z-10 mx-auto max-w-7xl px-4">
+        <div className="-m-6 flex flex-wrap md:flex-col lg:flex-row">
+          <div className="w-full p-6 md:w-full lg:w-5/12">
+            <div className="flex h-full flex-col justify-between text-center md:text-left">
+              <div className="mb-4 inline-flex items-center justify-center md:justify-start">
+                <Logo width="100px" />
+              </div>
+              <div>
+                <p className="text-sm font-normal dark:text-light text-dark">
+                  &copy; Copyright {new Date().getFullYear()}. Made with ❤️ by Rohan.
+                </p>
+              </div>
             </div>
-            <Link href="/" target={"_blank"} className='underline underline-offset-2'>Say Hello</Link>
-        </Layout>
-    </footer>
-  )
+          </div>
+          <div className="w-full p-6 md:w-1/2 lg:w-2/12 text-center md:text-left">
+            <div className="h-full">
+              <h3 className="tracking-px mb-4 text-lg font-semibold uppercase text-light dark:text-blue-500">
+                Quick Links
+              </h3>
+              <ul>
+                <li className="mb-2">
+                  <Link className="text-base font-medium dark:text-light text-dark hover:text-white hover:underline" href="/">
+                    Home
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link className="text-base font-medium dark:text-light text-dark hover:text-white hover:underline" href="/">
+                    About
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link className="text-base font-medium dark:text-light text-dark hover:text-white hover:underline" href="/">
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link className="text-base font-medium dark:text-light text-dark hover:text-white hover:underline" href="/">
+                    Skills
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="w-full p-6 md:w-1/2 lg:w-2/12 text-center md:text-left">
+            <div className="h-full">
+              <h3 className="tracking-px mb-4 text-lg font-semibold uppercase text-light dark:text-blue-500">
+                Contacts
+              </h3>
+              <ul>
+                <li className="mb-2">
+                  <Link className="text-base font-medium dark:text-light text-dark hover:text-white hover:underline" href="/">
+                    GitHub
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link className="text-base font-medium dark:text-light text-dark hover:text-white hover:underline" href="/">
+                    Twitter
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link className="text-base font-medium dark:text-light text-dark hover:text-white hover:underline" href="/">
+                    LinkedIn
+                  </Link>
+                </li>
+                <li>
+                  <Link className="text-base font-medium dark:text-light text-dark hover:text-white hover:underline" href="mailto:rohan.gautam650@gmail.com">
+                    Email
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="w-full p-6 md:w-full lg:w-3/12 text-center md:text-left">
+            <div className="h-full">
+              <h3 className="tracking-px mb-4 text-lg font-semibold uppercase text-light dark:text-blue-500">
+                Legals
+              </h3>
+              <ul>
+                <li className="mb-2">
+                  <Link className="text-base font-medium dark:text-light text-dark hover:text-white hover:underline" href="/">
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link className="text-base font-medium dark:text-light text-dark hover:text-white hover:underline" href="/">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link className="text-base font-medium dark:text-light text-dark hover:text-white hover:underline" href="/">
+                    Licensing
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Footer
+export default Footer;
