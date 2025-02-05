@@ -42,10 +42,32 @@ function page() {
   const ref = useRef(null);
   return (
     <>
-      <Head>
-        <title>Rohan Gautam | About Page</title>
-        <meta name='description' content="This is the about page of Rohan's profile" />
-      </Head>
+    <Head>
+  <title>About Rohan Gautam - MERN Stack & Next.js Web Developer</title>
+  <meta 
+    name="description" 
+    content="Discover Rohan Gautam, a MERN Stack and Next.js web developer passionate about building scalable, high-performance web applications. Learn more about his skills, experience, and projects." 
+  />
+  <meta name="keywords" content="Rohan Gautam, MERN Stack, Next.js Developer, Full-Stack Developer, Web Development, React.js, JavaScript, Portfolio" />
+  <meta name="author" content="Rohan Gautam" />
+  
+  {/* Open Graph (OG) Tags for Social Media */}
+  <meta property="og:title" content="About Rohan Gautam - MERN Stack & Next.js Developer" />
+  <meta property="og:description" content="Explore the journey of Rohan Gautam, a skilled web developer with expertise in the MERN stack and Next.js." />
+  <meta property="og:image" content="/images/profile/myPic.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/about" />
+
+  {/* Twitter Card for Better Visibility */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Rohan Gautam - MERN Stack & Next.js Developer" />
+  <meta name="twitter:description" content="Discover the journey of Rohan Gautam, a passionate MERN Stack developer specializing in Next.js and full-stack web development." />
+  <meta name="twitter:image" content="/images/profile/myPic.png" />
+
+  {/* Canonical URL */}
+  <link rel="canonical" href="/about" />
+</Head>
+
       <TransitionEffect />
       <main className='flex flex-col items-center justify-center w-full'>
         <Layout className='pt-16'>

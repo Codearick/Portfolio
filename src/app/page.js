@@ -13,9 +13,32 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home profile</title>
-        <meta name="Profile" content="About me" />
-      </Head>
+  <title>Rohan Gautam | Full-Stack Developer</title>
+  <meta name="description" content="Hi, I'm Rohan, a beginner full-stack developer passionate about transforming ideas into innovative web applications. Explore my latest projects to see my expertise in Next.js and modern web development in action." />
+  
+  {/* Open Graph Meta Tags for social sharing */}
+  <meta property="og:title" content="Rohan Gautam | Full-Stack Developer" />
+  <meta property="og:description" content="A passionate full-stack developer specializing in Next.js and modern web technologies." />
+  <meta property="og:image" content="/images/profile/myProfile.png" />
+  <meta property="og:url" content="/" />
+  <meta property="og:type" content="website" />
+
+  {/* Twitter Card for social preview */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rohan Gautam | Full-Stack Developer" />
+  <meta name="twitter:description" content="Hi, I'm Rohan, a beginner full-stack developer passionate about transforming ideas into innovative web applications." />
+  <meta name="twitter:image" content="/images/profile/myProfile.png" />
+
+  {/* Canonical URL */}
+  <link rel="canonical" href="/" />
+
+  {/* Keywords */}
+  <meta name="keywords" content="Rohan Gautam, full-stack developer, Next.js, JavaScript, web development, MERN stack, portfolio" />
+
+  {/* Robots Meta Tag */}
+  <meta name="robots" content="index, follow" />
+</Head>
+
       <TransitionEffect />
 
       <main className="flex items-center text-dark w-full min-h-screen">
