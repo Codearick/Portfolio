@@ -24,7 +24,7 @@ function page() {
   <meta name="twitter:title" content="Rohan Gautam | About Me" />
   <meta name="twitter:description" content="Learn more about Rohan Gautam, a passionate web developer specializing in Next.js, MERN stack, and backend development." />
   <meta name="twitter:image" content="/images/profile.jpg" />
-  <link rel="canonical" href="/about" />
+  <link rel="canonical" href="https://my-portfolio-gckid1o65-codearicks-projects.vercel.app/skills" />
 </Head>
 
       <TransitionEffect />

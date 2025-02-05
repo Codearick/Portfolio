@@ -103,7 +103,7 @@ function page() {
         <meta name="twitter:title" content="Rohan Gautam | Projects & Portfolio" />
         <meta name="twitter:description" content="Explore Rohan Gautam's projects in web development, Next.js, Tailwind CSS, backend development, and more." />
         <meta name="twitter:image" content="/images/projects/portfolio_image.png" />
-        <link rel="canonical" href="/projects" />
+        <link rel="canonical" href="https://my-portfolio-gckid1o65-codearicks-projects.vercel.app/projects" />
       </Head>
 
       <TransitionEffect />

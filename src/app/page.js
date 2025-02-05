@@ -30,7 +30,7 @@ export default function Home() {
   <meta name="twitter:image" content="/images/profile/myProfile.png" />
 
   {/* Canonical URL */}
-  <link rel="canonical" href="/" />
+  <link rel="canonical" href="https://my-portfolio-gckid1o65-codearicks-projects.vercel.app/" />
 
   {/* Keywords */}
   <meta name="keywords" content="Rohan Gautam, full-stack developer, Next.js, JavaScript, web development, MERN stack, portfolio" />

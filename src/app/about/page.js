@@ -65,7 +65,7 @@ function page() {
   <meta name="twitter:image" content="/images/profile/myPic.png" />
 
   {/* Canonical URL */}
-  <link rel="canonical" href="/about" />
+  <link rel="canonical" href="https://my-portfolio-gckid1o65-codearicks-projects.vercel.app/about" />
 </Head>
 
       <TransitionEffect />
