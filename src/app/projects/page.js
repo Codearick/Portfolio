@@ -120,7 +120,7 @@ function page() {
                 title="NextJs Portfolio Website"
                 summary="A professional portfolio website using Next JS, TailwindCSS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
                 img={portfolioImage}
-                link="https://github.com/Codearick/Portfolio"
+                link="https://my-portfolio-gckid1o65-codearicks-projects.vercel.app"
                 github={'https://github.com/Codearick/Portfolio'}
               />
             </div>
