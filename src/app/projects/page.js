@@ -120,7 +120,7 @@ function page() {
                 title="NextJs Portfolio Website"
                 summary="A professional portfolio website using Next JS, TailwindCSS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
                 img={portfolioImage}
-                link="https://my-portfolio-gckid1o65-codearicks-projects.vercel.app"
+                link="https://my-portfolio-plum-iota.vercel.app"
                 github={'https://github.com/Codearick/Portfolio'}
               />
             </div>
@@ -131,8 +131,8 @@ function page() {
                 title="Blog WebSite"
                 summary="Developed a visually appealing blog website using Next.js named 'Next-blog' and Tailwind CSS, ensuring a user-friendly design. Implemented an OOP-based approach to integrate Appwrite functionality for user authentication, blog post management, and file handling. Utilized Redux Toolkit for efficient and easy state management and user authentication. Leveraged Next.js features like Link, Image, and Router for efficient and faster app loading."
                 img={blogImage}
-                link={"https://github.com/Codearick/SocialFeed-Backend-Project"}
-                github={"https://github.com/Codearick/SocialFeed-Backend-Project"}
+                link={"https://github.com/Codearick/NextJs-Blog-App"}
+                github={"https://github.com/Codearick/NextJs-Blog-App"}
               />
             </div>
 
@@ -142,8 +142,8 @@ function page() {
                 title="SocialFeed - Backend Project"
                 summary="Developed a backend for a YouTube-style platform with authentication and video management. Created APIs for video search, sorting, pagination,subscription and playlist features. Implemented like management for videos, comments, and tweets. Conducted API testing using Postman. Utilized MongoDB, Mongoose, Multer, and Cloudinary."
                 img={backendImage}
-                link={"https://github.com/Codearick/NextJs-Blog-App"}
-                github={"https://github.com/Codearick/NextJs-Blog-App"}
+                link={"https://github.com/Codearick/SocialFeed-Backend-Project"}
+                github={"https://github.com/Codearick/SocialFeed-Backend-Project"}
               />
             </div>
             <div className='col-span-12'>
